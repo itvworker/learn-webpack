@@ -1,0 +1,9 @@
+export default function(a){
+    console.log('web-ser');
+    if(a===1) {
+        console.log('web-input');
+    }
+    if(a ===2) {
+        console.log('web-input2');
+    }
+}
