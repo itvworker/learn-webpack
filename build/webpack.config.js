@@ -26,6 +26,8 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(), //打包之前清理文件夹
-        new TestPlugin()
+        new TestPlugin({
+            name:"webpack"
+        })
     ]
 }
