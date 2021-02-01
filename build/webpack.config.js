@@ -20,7 +20,26 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|ht)$/,
-                loader: 'babel-loader',
+                use: [
+                    {loader:'babel-loader'}
+                ]    
+            },
+            {
+                test: /\.(less|css)$/,
+                use:[
+                    {
+                        loader: 'css-loader',
+                    },
+                    {
+                        loader: 'less-loader'
+                    },
+                    {
+                        loader: resolve('loaders/itv-loader.js'),
+                        options: {
+                            resources: [resolve('src/const.less')],
+                        }
+                    }
+                ]
             }
         ]
     },

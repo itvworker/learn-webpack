@@ -16,9 +16,13 @@ class TestPlugin {
       // );
     
       
-
-     
-      console.log( Object.keys(compiler.hooks.entryOption));
+      // compiler.hooks.entryOption.tapAsync('TestPlugin',(arg, callback)=>{
+      //   console.log('-----------------------');
+      //   console.log(arguments);
+      //   callback()
+      // })
+      
+ 
       
     }
 
